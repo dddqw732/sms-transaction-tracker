@@ -5,6 +5,12 @@ load_dotenv()
 
 import json
 import os
+import sys
+from pathlib import Path
+
+# Add the server directory to the Python path for Vercel
+sys.path.append(str(Path(__file__).parent))
+
 import random
 import re
 from contextlib import asynccontextmanager
